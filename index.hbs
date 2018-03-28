@@ -9,6 +9,7 @@ into the {body} of the default.hbs template --}}
             <h1 class="site-title">
                 {{#if @blog.logo}}
                     <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+                    {{@blog.title}}
                 {{else}}
                     {{@blog.title}}
                 {{/if}}

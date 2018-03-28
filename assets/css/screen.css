@@ -111,6 +111,8 @@ body {
     padding-bottom: 12px;
     color: #fff;
     background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    /*color: ##090a0b;*/
+
     background-size: cover;
 }
 
@@ -148,12 +150,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 10vw 4vw;
+    /* align-items: center;
+    padding: 10vw 4vw; */
+    align-items: baseline;
+    padding: 8vw 4vw 12vw;
     min-height: 200px;
     max-height: 450px;
     text-align: center;
 }
+
+/*padding: 8vw 4vw 6vw;*/
 
 .site-title {
     z-index: 10;
@@ -165,6 +171,7 @@ body {
 
 .site-logo {
     max-height: 45px;
+    margin: 0 5px 0 0;
 }
 
 .site-description {
@@ -240,9 +247,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .site-nav-logo img {
-    display: block;
+    /* display: block; */
     width: auto;
     height: 21px;
+    margin: 0 5px 0 0;
 }
 
 .nav {
@@ -551,13 +559,15 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 .post-full-header {
     margin: 0 auto;
-    padding: 6vw 3vw 3vw;
+    /* padding: 6vw 3vw 3vw; */
+    padding: 3vw 3vw 3vw;
     max-width: 1040px;
     text-align: center;
 }
 @media (max-width: 500px) {
     .post-full-header {
-        padding: 14vw 3vw 10vw;
+        /* padding: 14vw 3vw 10vw; */
+        padding: 6vw 3vw 6vw;
     }
 }
 
@@ -586,8 +596,10 @@ The first (most recent) post in the list is styled to be bigger than the others 
 }
 
 .post-full-image {
-    margin: 0 -10vw -165px;
-    height: 800px;
+    /*margin: 0 -10vw -165px;
+    height: 800px;*/
+    margin: 0 -10vw -140px;
+    height: 600px;
     background: var(--lightgrey) center center;
     background-size: cover;
     border-radius: 5px;
@@ -595,7 +607,8 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 @media (max-width: 1170px) {
     .post-full-image {
-        margin: 0 -4vw -100px;
+        /*margin: 0 -4vw -100px;*/
+        margin: 0 -4vw -200px;
         height: 600px;
         border-radius: 0;
     }
@@ -1391,7 +1404,7 @@ Usage (In Ghost editor):
 }
 
 .floating-header-logo {
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin: 0 0 0 20px;
     font-size: 1.6rem;
     line-height: 1em;
